@@ -1,0 +1,1477 @@
+<!DOCTYPE html><html lang="en"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="https://adminauctionqa.gaadi.com/assets/images/favicon.ico">
+        <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-WMELDELNZ7&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="https://scripts.clarity.ms/0.8.61/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/kfiz66nt84"></script><script language="JavaSCRIPT">
+            var site_url = 'https://adminauctionqa.gaadi.com/';
+            var image_url = 'https://adminauctionqa.gaadi.com/assets/images/';
+            var helpline = '+91-8448488200';
+            function msieversion() {
+                var ua = window.navigator.userAgent
+                var msie = ua.indexOf("MSIE ")
+
+                if (msie > 0)      // If Internet Explorer, return version number
+                    return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)))
+                else                 // If another browser, return 0
+                    return 0
+
+            }
+            if (msieversion() > 5 && msieversion() <= 9) {
+                console.log("This is Internet Explorer 9 or later");
+                window.location.href = site_url + 'ieNotSupported';
+            }
+        </script>
+                <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "kfiz66nt84");
+        </script>
+
+        <title>Auction</title>
+
+        <!-- Bootstrap core CSS Comment -->
+        <link href="https://adminauctionqa.gaadi.com/assets/css/bootstrap.min.css?ver=1777874987" rel="stylesheet">
+                    <!-- Custom styles for this template -->
+            <link href="https://adminauctionqa.gaadi.com/assets/css/dashboard.css?ver=1777874987" rel="stylesheet">    
+                
+        <link rel="stylesheet" href="https://adminauctionqa.gaadi.com/assets/css/alertify.min.css?ver=1777874987">
+
+        <!-- Common styles for this template -->
+        <link href="https://adminauctionqa.gaadi.com/assets/css/common.css?ver=1777874987" rel="stylesheet">
+
+        <!-- Developer styles for this template -->
+        <link href="https://adminauctionqa.gaadi.com/assets/css/developer.css?ver=1777874987" rel="stylesheet">
+
+        <!-- Common styles for this template -->
+        <link href="https://adminauctionqa.gaadi.com/assets/css/font-awesome.css?ver=1777874987" rel="stylesheet">
+        <link href="https://adminauctionqa.gaadi.com/assets/css/datepicker.css?ver=1777874987" rel="stylesheet">
+        <link href="https://adminauctionqa.gaadi.com/assets/css/bootstrap-datetimepicker.css?ver=" rel="stylesheet">
+
+        <!-- Common styles for this template -->
+        <link href="https://adminauctionqa.gaadi.com/assets/css/notify.css?ver=1777874987" rel="stylesheet">
+
+        <link href="https://adminauctionqa.gaadi.com/assets/css/sumoselect.css?ver=1777874987" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="https://adminauctionqa.gaadi.com/assets/css/jquery.dataTables.min.css?ver=1777874987">
+        <link rel="stylesheet" type="text/css" href="https://adminauctionqa.gaadi.com/assets/css/jquery.bxslider.css?ver=1777874987">
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="https://adminauctionqa.gaadi.com/assets/js/assets/ie8-responsive-file-warning.js?ver=1777874987"></script><![endif]-->
+        <script src="https://adminauctionqa.gaadi.com/assets/js/assets/ie-emulation-modes-warning.js?ver=1777874987"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://adminauctionqa.gaadi.com/assets/js/jquery.min.js?ver=1777874987"></script>
+        <script type="text/javascript" src="https://adminauctionqa.gaadi.com/assets/js/jquery-ui.min.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/jquery.bxslider.min.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/jquery.lazyload.min.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/notify.js?ver=?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/jquery.validate.min.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/bootstrap.min.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/moment.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/jquery.sumoselect.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/bootstrap-datepicker.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/bootstrap-datetimepicker.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/auction.js?ver=1777874987"></script>
+        <script type="text/javascript" src="https://adminauctionqa.gaadi.com/assets/js/dataTables.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/my.js?ver=1777874987"></script>
+        <script src="https://adminauctionqa.gaadi.com/assets/js/alertify.min.js?ver=1777874987"></script>
+        <script src="https://auctionqa.cardekho.com/socket.io/socket.io.min.js"></script>
+<script>
+    function getSocketCOnnection(){
+        return io.connect('https://auctionqa.cardekho.com/', {
+            transports: ['websocket'],
+            query: {
+                business: 'b2b',
+                parent_id: '0',
+                token: 'f42b2621abda0c514fbc8013d3a3b685',
+                user_id: '1',
+                platform: 'web'
+            }
+        });
+    }
+</script>
+        
+   <!--[if IE]><script src="https://adminauctionqa.gaadi.com/assets/js/excanvas.js?ver=1777874987"></script><![endif]-->
+        <script src="https://adminauctionqa.gaadi.com/assets/js/html5-canvas-bar-graph.js?ver=1777874987"></script>
+        <!--<script src="https://adminauctionqa.gaadi.com/assets/js/assets/docs.min.js"></script>-->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="https://adminauctionqa.gaadi.com/assets/js/assets/ie10-viewport-bug-workaround.js?ver=1777874987"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('.dropdown-toggle').hover(function () {
+                    $(this).parents('li').find('.dropdown-menu').show();
+                }, function () {
+                    $(this).parents('li').find('.dropdown-menu').hide();
+                });
+
+                $('.dropdown-menu').hover(function () {
+                    $(this).show();
+                }, function () {
+                    $(this).hide();
+                });
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+            var termsNConditions = function () {
+                var accept = $('#accept').is(':checked');
+                if (accept == true) {
+                    var url = site_url + 'user/ajax/updateTnC';
+                    $.ajax({
+                        url: url,
+                        type: 'GET',
+                        global: false,
+                        async: false,
+                        dataType: 'HTML',
+                        success: function (response) {
+                            window.location.reload(true);
+                        }
+                    });
+                } else {
+                    alertify.alert('Please click on checkbox to accept Terms & Conditions').set('title', 'Accept Terms & Conditions');
+                    return false;
+                }
+            }
+            $(document).ready(function () {
+                var user_is_terms = 'yes';
+                if (user_is_terms.toLowerCase() == 'no' || user_is_terms == '') {
+                    $('#terms').modal({
+                        show: true,
+                        backdrop: 'static',
+                        keyboard: false
+                    });
+                }
+                $.fn.dataTableExt.sErrMode = 'throw';
+                $('#spnTop').on("click", function () {
+                    $('html,body').animate({scrollTop: 0}, 'slow', function () {
+
+                    });
+                });
+
+                window.addEventListener("beforeunload", function (e) {
+                    /*var url = site_url + 'user/ajax/leaving';
+                     $.ajax({
+                     url : url,
+                     type : 'GET',
+                     global:false,
+                     async: false,
+                     dataType : 'HTML',
+                     success : function(response)
+                     {
+                     window.location.reload(true);
+                     }
+                     });   */
+                    //var confirmationMessage = "\o/";
+                    //(e || window.event).returnValue = confirmationMessage; //Gecko + IE
+                    //return confirmationMessage;                            //Webkit, Safari, Chrome
+
+                });
+
+            });
+            function number_format(number, decimals, dec_point, thousands_sep) {
+                number = (number + '')
+                        .replace(/[^0-9+\-Ee.]/g, '');
+                var n = !isFinite(+number) ? 0 : +number,
+                        prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+                        sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+                        dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+                        s = '',
+                        toFixedFix = function (n, prec) {
+                            var k = Math.pow(10, prec);
+                            return '' + (Math.round(n * k) / k)
+                                    .toFixed(prec);
+                        };
+                // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+                s = (prec ? toFixedFix(n, prec) : '' + Math.round(n))
+                        .split('.');
+                if (s[0].length > 3) {
+                    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+                }
+                if ((s[1] || '')
+                        .length < prec) {
+                    s[1] = s[1] || '';
+                    s[1] += new Array(prec - s[1].length + 1)
+                            .join('0');
+                }
+                return s.join(dec);
+            }
+        </script>   
+        <script>
+            function getNumericVal(val) {
+                if (typeof val != 'undefined') {
+                    return parseInt(val.split(",").join(""));
+                } else {
+                    return 0;
+                }
+            }
+
+        </script>
+        <script>
+            /*(function(c,e,f,k,g,h,b,a,d){c[g]||(c[g]=h,b=c[h]=function(){ b.q.push(arguments)}
+            ,b.q=[],b.l=1*new Date,a=e.createElement(f),a.async=1,
+            a.src=k,a.setAttribute("crossorigin", "anonymous"),d=e.getElementsByTagName(f)[0],
+            d.parentNode.insertBefore(a,d))})(window,document,"script",
+            "https://eum.instana.io/eum.min.js","InstanaEumObject","ineum");
+            ineum('reportingUrl', 'https://eum-red-saas.instana.io');
+            ineum('key', 'z3FwtQetTMeaE-KibuX5MA'); */
+        </script>
+    </head>
+    <body>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-69744465-1', {'siteSpeedSampleRate': 100});
+            ga('send', 'pageview');
+        </script>
+                <div id="auction_msg_container" class="auction_msg">
+            <div class="underlay"></div>
+            <div class="auction_msg_outer_container">
+                <div class="auction_msg_inner_container">
+                    <table class="auction_msg_table">
+                        <tbody><tr>
+                            <td>
+                                <div class="icon"></div>
+                            </td>
+                            <td>
+                                <div class="upload-progress">
+                                    <div class="percent">0%</div>
+                                </div>
+                                <div class="message"><!--Here comes the Notification Message Text--></div>
+                            </td>
+                            <td>
+                                <div class="close_icon">X</div>
+                            </td>
+                            <td>
+                                <div class="actions_container">
+                                    <a data-action_eval_string="alert(\'I am action_2_btn\')" href="javascript:void(0)" class="btn btn-lg btn-primary btn-block action_2_btn action_btn"><div class="text">No</div><div class="clear"></div></a>
+                                    <a data-action_eval_string="alert(\'I am action_1_btn\')" href="javascript:void(0)" class="btn btn-lg btn-primary btn-block action_1_btn action_btn"><div class="text">Yes</div><div class="clear"></div></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+                    <header>
+                <div class="container-fluid">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container-flued">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed mob_hamburger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                                                <div class="logo-wrapper font-md" style="float:left; padding: 3px 15px 0;"> 
+                                    <a href="https://adminauctionqa.gaadi.com/auction/manageAuction">
+                                        <img src="https://adminauctionqa.gaadi.com/assets/images/auction.png" class="img-responsive" alt="Cardekho Auctions" title="CarDekho Auctions">
+                                    </a> 
+                                </div>
+                                <div class="mob_userAccount">
+                                    <div class="float-R buyerIcon">
+                                        <a aria-expanded="true" role="button" data-toggle="dropdown" class="dropdown-toggle border-none" href="#">
+                                            <span class=""><img src="https://adminauctionqa.gaadi.com/assets/images/user.png" alt="Rahul Binod" class="user-icon" title="Rahul Binod"> </span>
+
+         <!-- Rahul Binod <i class="fa fa-angle-down" data-unicode="f107"></i> -->
+                                        </a>
+                                        <ul role="menu" class="dropdown-menu welcome-dropdown">
+                                            <li><a href="https://adminauctionqa.gaadi.com/user/manageAccount" style="background: transparent;"><i class="fa fa-unlock-alt pad-R5" data-unicode="f13e"></i>My Account</a></li>
+                                            <li><a class="confirm_logout" style="background: transparent; cursor: pointer"><i class="fa fa-power-off pad-R5 " data-unicode="f011"></i>Logout</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>      
+                            </div>
+                                                            <div id="navbar" class="collapse navbar-collapse">
+                                    <script>
+    var API_KEY = 'N2QyMzkyOTE2MzZjOTkyNzgxMTJkNmNiNThjNTRhYWY=';
+    var homeauction_site_url = 'https://fdsqoh08yl.execute-api.ap-south-1.amazonaws.com/prod/';
+</script>
+<ul class="nav navbar-nav acMenu nav-scroll">
+    <!-- <li id="Home" class="active"><a href="#">Home</a></li> -->
+            <li><a href="https://adminauctionqa.gaadi.com/dashboard/adminDashboard">DASHBOARD</a></li>
+                <li id="Vehicles"><a href="https://adminauctionqa.gaadi.com/pvm/manageVehicles">Vehicles</a></li>
+                <li id="Auction" class="active"><a href="https://adminauctionqa.gaadi.com/auction/manageAuction">Auctions</a></li>
+                <li id="homeauction"><a href="https://adminauctionqa.gaadi.com/propertyauction/manageAuctions">Property Auction</a></li>
+                <li id="payments"><a href="https://adminauctionqa.gaadi.com/auctionMonitoring/approvals">Payments</a></li>
+    
+            <li id="PostAuction"><a href="https://adminauctionqa.gaadi.com/postauction/postAuctionDashboard">POST AUCTIONS</a></li>
+                <li class="">
+            <a href="https://adminauctionqa.gaadi.com/reports/sellerReportDashboard">SELLER REPORTS
+            </a>
+        </li>
+                <li class="">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LMS <i class="fa fa-angle-down" data-unicode="f107"></i>
+            </a>
+            <ul class="dropdown-menu mobSub-menu" style="column-count:1;right:0;">
+                                    <li><a href="https://adminauctionqa.gaadi.com/user/userLeads">Newly Generated Leads</a></li>
+                                                    <li><a href="https://adminauctionqa.gaadi.com/user/newlyOnboarded">Newly Onboarded Buyers</a></li>
+                            </ul>
+        </li>
+    
+
+            <li class="">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ADMINISTRATIONS
+                <i class="fa fa-angle-down" data-unicode="f107"></i></a>
+            <ul class="dropdown-menu mobSub-menu" style="column-count:2;right:0;">
+                                    <li><a href="https://adminauctionqa.gaadi.com/onboarding/manageParticipant">Manage Participants</a></li>
+                                <!--            <li><a href="auction/manageAuction">Manage Auction</a></li>-->
+                                    <li><a href="https://adminauctionqa.gaadi.com/group/manageGroup">Manage Groups</a></li>
+                                                    <li><a href="https://adminauctionqa.gaadi.com/user/manageUser">Manage Users</a></li>
+                                    <li><a href="https://adminauctionqa.gaadi.com/approvals/list">Manage Exceptions</a></li>
+                                    <li><a href="https://adminauctionqa.gaadi.com/mmv/manageMmv">Manage MMV</a></li>
+                                    <li><a href="https://adminauctionqa.gaadi.com/manage/manageState">Manage States</a></li>
+                                    <li><a href="https://adminauctionqa.gaadi.com/cms/manageNodes">Manage Banners</a></li>
+                                                    <li><a href="https://adminauctionqa.gaadi.com/roles/view">Manage Roles / Permissions</a>
+                                        </li>
+                    <li id="BidDetail"><a href="https://adminauctionqa.gaadi.com/onboarding/buyerDiscovery">Buyer Discovery</a></li>
+                                            <li><a href="https://adminauctionqa.gaadi.com/calling/make-calls">Calling</a></li>
+                                                                <li id="BidDetail"><a href="https://adminauctionqa.gaadi.com/auction/auctionMonitoring">Reports</a></li>
+                                        <!--                          <li><a href="https://adminauctionqa.gaadi.com/reports">Admin Reports</a></li>
+                         -->
+                                            <li id="BidderDetail"><a href="https://adminauctionqa.gaadi.com/auctionMonitoring/auctionVehicleMonitoring">Auction Monitoring</a></li>
+
+                        <li id="BidderDetail"><a href="https://adminauctionqa.gaadi.com/auction/expiredVehiclesMonitoring">Expired Auction Monitoring</a></li>
+                                        <li><a href="https://adminauctionqa.gaadi.com/smsPanel">Communication Panel</a></li>
+                                            <li><a href="https://adminauctionqa.gaadi.com/oem/manageOem">Manage OEMs</a>
+                                                                        </li><li><a href="https://adminauctionqa.gaadi.com/regionmap/manageRegions">Manage Auction Regions</a>
+                                                                        </li><li><a href="https://adminauctionqa.gaadi.com/manage/manageManager">Manage Manager Mapping</a></li>
+                                                                <li><a href="https://adminauctionqa.gaadi.com/manage/manageDispositions">Manage Dispositions</a></li>
+                                                                <li><a href="https://adminauctionqa.gaadi.com/templates">Insurance ACR Email Template</a></li>
+                    
+                                            <li><a href="https://adminauctionqa.gaadi.com/transaction/manageTransactions">Online Transactions</a>
+                        
+                                                </li><li><a href="https://adminauctionqa.gaadi.com/gatePass/manageGatePass">Gate Pass</a>
+                                                                    </li><li><a href="https://adminauctionqa.gaadi.com/acrFormate">Bank ACR Format</a></li>
+                                            <li><a href="https://adminauctionqa.gaadi.com/fincare/dashboard">Fincare Dashboard</a>
+                                                                </li><li><a href="https://adminauctionqa.gaadi.com/yardmanagement/yards">Yards</a>
+                                                                </li><li><a href="https://adminauctionqa.gaadi.com/yardmanagement/yard-vehicles">Yard Management Dashboard</a>
+                                                                </li><li><a href="https://adminauctionqa.gaadi.com/auction/vahanDetail">VAHAN Panel</a>
+                                                                </li><li><a href="https://adminauctionqa.gaadi.com/onboarding/vendor-onboarding/">Vendor Onboarding Panel</a>
+                                </li></ul>
+        </li>
+
+    
+    <li class="dropdown login-btn-mob float-R">
+        <a aria-expanded="true" role="button" data-toggle="dropdown" class="dropdown-toggle border-none" href="#" style="text-transform:capitalize;">
+            <span class=""><img src="https://adminauctionqa.gaadi.com/assets/images/user.png" alt="Rahul Binod" class="user-icon" title="Rahul Binod">
+            </span>Rahul Binod <i class="fa fa-angle-down" data-unicode="f107"></i>
+        </a>
+                <ul role="menu" class="dropdown-menu welcome-dropdown">
+            <li><a href="https://adminauctionqa.gaadi.com/user/manageAccount" style="background: transparent;"><i class="fa fa-unlock-alt pad-R5" data-unicode="f13e"></i>My Account</a></li>
+            <li><a class="confirm_logout" style="background: transparent; cursor: pointer;"><i class="fa fa-power-off pad-R5 " data-unicode="f011"></i>Logout</a></li>
+        </ul>
+            </li>
+
+</ul>                                </div><!--/.nav-collapse -->
+                            </div>
+                    </nav>
+                </div>
+            </header>
+        <script type="text/javascript">
+            $(".confirm_logout").click(function () {
+                var strconfirm = confirm("Are you sure you want to logout?");
+                if (strconfirm == true) {
+                    window.location = "https://adminauctionqa.gaadi.com/user/logout";
+                }
+
+            });
+
+        </script>
+        <!--/Top Header -->
+<link href="https://adminauctionqa.gaadi.com/assets/css/toggle-switch.css?ver=1777874987" rel="stylesheet">
+<link href="https://adminauctionqa.gaadi.com/assets/css/timeTo.css?ver=1777874987" rel="stylesheet">
+<script src="https://adminauctionqa.gaadi.com/assets/js/jquery.timeTo.js?ver=1777874987"></script>
+<link href="https://adminauctionqa.gaadi.com/assets/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css">
+<script src="https://adminauctionqa.gaadi.com/assets/js//fileinput.min.js"></script>
+<script>
+var  live= false;
+var upcoming=false;
+var expiring=false;
+var uploading=false;
+var table1 = null;
+var table2 = null;
+var table3 = null;
+var table4 = null;
+var restartMoveDeamon =function(){
+  var url = site_url + 'auction/ajax/handlerAuction'; 
+  $.ajax({
+          url : url,
+          type : 'POST',
+          data : {'fxn': 'restartMoveDeamon'},
+          dataType : 'JSON',
+          success : function(response){
+           show_auction_msg('success', response.msg, 'vanish', 2000, true, false, false, false, false,null,null,null,null,false);
+          }
+        });
+}
+var gotoPPt = function(){
+  var liveAuctionOfTodat = '0';
+  if(liveAuctionOfTodat >= 1){
+    var choice = confirm("Some Auctions have still not ended, are you sure you want to continue?");
+    if(choice)
+      window.location = "https://adminauctionqa.gaadi.com/auction/downloadPpt";
+  }else{
+    window.location = "https://adminauctionqa.gaadi.com/auction/downloadPpt";
+  }
+}
+$('#search_by').hide();
+var toggleSection = function(section)
+{
+    $('.auction-tab .tabmain').hide();
+    $('#' +  section +  'Tab').show();
+
+    document.cookie = 'sectionToDisplay =' +section; 
+
+    if(section=='live' || section == "upcoming" || section == "uploading")
+    {
+        // $("select#filter_on").val('all'); 
+
+        $('#search_by').hide();
+        if (section == "upcoming"){
+                    }
+        if (section == "uploading"){
+                    }
+            }
+    if(section=='expiring')
+    { 
+        // $("select#filter_on").val('title')        
+        $('#search_by').show();
+        if (section == "expiring"){
+                    }
+    }
+    
+    if(section == 'live'){
+        if(table1) table1.ajax.reload();
+    }
+    else if(section == 'upcoming'){
+        if(table2){
+            table2.ajax.reload();
+        } else {
+            table2 = $('.upcomingAuction').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "order": [[0, 'desc']],
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/upcomingAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":"all"},
+                    complete : function(response)
+                    {
+                       upcoming=true;
+                       document.getElementById("upTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+            });
+        }
+    }
+    else if(section == 'uploading'){
+        if(table3){
+            table3.ajax.reload();
+        } else {
+            table3 = $('.uploadingAuction').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "order": [[0, 'desc']],
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/uploadingAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":"all"},
+                    complete : function(response)
+                    {
+                       uploading=true;
+                       document.getElementById("uplTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+            });
+        }
+    }
+    else if(section == 'expiring'){
+        if(table4){
+            table4.ajax.reload();
+        } else {
+            table4 = $('.expiredAuction').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "order": [[0, 'desc']],
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/expiredAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":$('#filter_on').val()},
+                    complete : function(response)
+                    {
+                       expiring=true;
+                       document.getElementById("exTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+            });
+        }
+    }
+}
+var timer = new Array();
+var timeInterval = [];
+var auctionRecordsLimit = '100';
+var cookiefunction=function(live_local,upcoming_local,uploading_local,expiring_local)
+  {
+     var allcookies = document.cookie;
+     if(live_local==true && uploading_local==true && expiring_local==true && upcoming_local==true)
+     {     
+          // Get all the cookies pairs in an array
+          cookiearray = allcookies.split(';');    
+          // Now take key value pair out of this array
+          for(var i=0; i<cookiearray.length; i++)
+            {
+                name = cookiearray[i].split('=')[0];
+                value = cookiearray[i].split('=')[1];
+                if(name == "sectionToDisplay")
+                  {   
+                      toggleSection(value);
+                      $('#'+ value).trigger('click');
+                  }
+             }
+           live=upcoming=expiring=uploading=false;
+         }
+    
+  }
+
+$(function()
+{
+//   var interval = setInterval(function(){cookiefunction(live,upcoming,uploading,expiring);
+//       // clearInterval(interval);
+//   },1000); 
+
+     setActiveMenu('Auction');
+     
+        table1 =  $('.liveAuction').DataTable({
+            "processing": true,
+            "pageLength" : parseInt(auctionRecordsLimit),
+            "serverSide": true,
+            "order": [[0, 'desc']],
+            "initComplete": function() {
+                var api = this.api();
+                $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+            },
+            "ajax":{
+                global : false,
+                url :  site_url + "auction/ajax/datatable/liveAuctions", // json datasource
+                type: "post", // method  , by default get
+                data: {"business_id":$('#business_id').val(),"filter_on":"all"},
+                complete : function(response)
+                {
+                  console.log($('#filter_on').val());
+                    live=true;
+                    document.getElementById("liveTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    clearInterval(timeInterval);
+                    timeInterval = setInterval(function(){
+                        $('.time-remaining').each(function() {
+                           var remainingSec = parseInt($(this).attr('data-remaining'));
+                           if(remainingSec > 0)
+                           {
+                            remainingSec--;
+                            var seconds = remainingSec%60;
+                            var minutes = Math.floor(remainingSec/60)%60;
+                            var hours = Math.floor(remainingSec/60/60)%24;
+                            var days = Math.floor(remainingSec/60/60/24);
+                            var comboDate = '';
+                            if  (days > 0) {
+                             if ((days == 1 || days == 01) && (minutes == 0 || minutes == 00)) {
+                              comboDate = '24h 00m';  
+                             } else {
+                              comboDate = dateFormat(days)+'d '+dateFormat(hours)+'h';
+                             }
+                            } else if  (hours > 0) {
+                              comboDate = dateFormat(hours)+'h '+dateFormat(minutes)+'m';
+                            } else if (minutes > 0) {
+                             comboDate = dateFormat(minutes)+'m '+dateFormat(seconds)+'s';
+                            } else {
+                             comboDate = dateFormat(seconds)+'s';
+                            }
+                            $(this).html(comboDate);
+                            $(this).attr('data-remaining',remainingSec);
+                            if(remainingSec == 0){
+                             $(this).html('Expired');
+                            }
+                           }
+                           
+                        });
+                    },1000);
+                }
+            },
+            "aoColumnDefs": [
+              { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+           ]
+    });     
+
+    $(document).on('change', '#filter_on', function () {
+       /*if(table1) table1.destroy();
+       if(table2) table2.destroy();
+       if(table3) table3.destroy();*/
+       if(table4) table4.destroy();
+
+        /*table1 =  $('.liveAuction').DataTable({
+                "processing": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "serverSide": true,
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/liveAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":"all"},
+                    complete : function(response)
+                    {
+                      console.log($('#filter_on').val());
+                        live=true;
+                        document.getElementById("liveTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                        clearInterval(timeInterval);
+                        timeInterval = setInterval(function(){
+                            $('.time-remaining').each(function() {
+                               var remainingSec = parseInt($(this).attr('data-remaining'));
+                               if(remainingSec > 0)
+                               {
+                                remainingSec--;
+                                var seconds = remainingSec%60;
+                                var minutes = Math.floor(remainingSec/60)%60;
+                                var hours = Math.floor(remainingSec/60/60)%24;
+                                var days = Math.floor(remainingSec/60/60/24);
+                                var comboDate = '';
+                                if  (days > 0) {
+                                 if ((days == 1 || days == 01) && (minutes == 0 || minutes == 00)) {
+                                  comboDate = '24h 00m';  
+                                 } else {
+                                  comboDate = dateFormat(days)+'d '+dateFormat(hours)+'h';
+                                 }
+                                } else if  (hours > 0) {
+                                  comboDate = dateFormat(hours)+'h '+dateFormat(minutes)+'m';
+                                } else if (minutes > 0) {
+                                 comboDate = dateFormat(minutes)+'m '+dateFormat(seconds)+'s';
+                                } else {
+                                 comboDate = dateFormat(seconds)+'s';
+                                }
+                                $(this).html(comboDate);
+                                $(this).attr('data-remaining',remainingSec);
+                                if(remainingSec == 0){
+                                 $(this).html('Expired');
+                                }
+                               }
+                            });
+                        },1000);
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+        });
+
+        if(table2) {
+            table2 = $('.upcomingAuction').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "order": [[0, 'desc']],
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/upcomingAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":"all"},
+                    complete : function(response)
+                    {
+                       upcoming=true;
+                       document.getElementById("upTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+            });
+        }
+
+        if(table3) {
+            table3 = $('.uploadingAuction').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "order": [[0, 'desc']],
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/uploadingAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":"all"},
+                    complete : function(response)
+                    {
+                       uploading=true;
+                       document.getElementById("uplTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+            });
+        }*/
+
+        if(table4) {
+            table4 = $('.expiredAuction').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "pageLength" : parseInt(auctionRecordsLimit),
+                "order": [[0, 'desc']],
+                "initComplete": function() {
+                    var api = this.api();
+                    $( '.dataTables_filter input', api.table().container() ).off( 'keyup.DT input.DT' );
+                },
+                "ajax":{
+                    global : false,
+                    url :  site_url + "auction/ajax/datatable/expiredAuctions",
+                    type: "post",
+                    data: {"business_id":$('#business_id').val(),"filter_on":$('#filter_on').val()},
+                    complete : function(response)
+                    {
+                       expiring=true;
+                       document.getElementById("exTotalRecord").innerHTML = response.responseJSON.recordsTotal;
+                    }
+                },
+                "aoColumnDefs": [
+                  { 'bSortable': false, 'aTargets': [ 3,9,10 ] }
+               ]
+            });
+        }
+    });
+    
+    $(document).on('keyup', '.dataTables_filter input', function() {
+        var $input = $(this);
+        var $table = $input.closest('.dataTables_wrapper').find('table.dataTable');
+        var dtInstance = $table.DataTable();
+        var value = $input.val();
+
+        var timer = $table.data('searchTimer');
+        if (timer) {
+            clearTimeout(timer);
+        }
+
+        var newTimer = setTimeout(function() {
+            if (value.length >= 3) {
+                dtInstance.search(value).draw();
+            } else if (value.length === 0) {
+                dtInstance.search('').draw();
+            }
+        }, 1000);
+
+        $table.data('searchTimer', newTimer);
+    });
+
+})
+
+$(document).on('change','#business_id', function() {
+    var title = $(this).find('option:selected').text();
+    //console.log(title);
+    // $('#business_id').title = title;
+    });
+
+
+/*setTimeout(function() {
+    toggleSection('live');
+}, 1000);*/
+$(document).on('click', '.download_inventry_data', function (e) {
+  e.preventDefault();
+  var data = $(this).data('auction_id').split('_');
+  var url = site_url + 'auction/ajax/downloadVehicleInventryData';
+  window.location.href = site_url + 'auction/ajax/downloadVehicleInventryData?' + data;
+});
+
+$(document).on('change', 'input[name="auctionType"]', function() {
+    let val = $('input[name="auctionType"]:checked').val();
+    if(val == 'import') {
+        $('#importAuction').slideDown();
+        $('#exportAuction').slideUp();
+    }
+    else {
+        $('#importAuction').slideUp();
+        $('#exportAuction').slideDown();
+    }
+});
+
+$("#upload-sheet").fileinput({
+    showPreview: false,
+    showUpload: false,
+    allowedFileExtensions: ['xls', 'xlsx'],
+    'elErrorContainer': '#errorBlock'
+});
+
+$(document).on('change', '#upload-sheet', function(){
+  console.log("Site url",site_url);
+  var url = site_url + 'auction/ajax/ocbUpdate';
+  var name = document.getElementById("upload-sheet").files[0].name;
+  var form_data = new FormData();
+  var ext = name.split('.').pop().toLowerCase();
+  if(jQuery.inArray(ext, ['xls','xlsx']) == -1) {
+    console.log("hereee");
+    alert("Invalid File");
+  }
+  form_data.append("file", document.getElementById('upload-sheet').files[0]);
+    $.ajax({
+       url: url,
+       type: 'POST',
+       data: form_data,
+       contentType: false,
+       cache: false,
+       processData: false,
+       dataType: 'JSON', 
+      success:function(response) {
+          if(response.status == 200){
+              $('#showErrorMsg').css("display", "block");
+              var html = '<p style="color: green; font-size:14px;">'+response.msg+'</p>'
+              $('#showErrorMsg').html(html);
+          } else {
+              var errorFile  =  response.errorFile;
+              var failureUploadCount = response.rowErrorCount;
+              if(errorFile){
+                  $('#errorFileMsg').css("display", "block");
+                  $('#showErrorMsg').css("display", "block");
+                  $('#showErrorMsg').html('<p style="font-size:14px;">'+failureUploadCount + ' Error found in upload sheet. Please fix errors and re-upload the sheet.</p>');
+                  var downloadUrl = site_url + 'uploads/' + errorFile;
+                  var  pathHtml =  '<a href =  "'+ downloadUrl + '" class="btn btn-danger"><i class="fa fa-download font-16" data-unicode="f019" ></i>Download Error File</a>';
+                  $('#errorFileMsg').html(pathHtml);
+              } else {    
+                  var html = '<p style="color: red; font-size:14px;">'+response.msg+'</p>'
+                  $('#showErrorMsg').css("display", "block");
+                  $('#showErrorMsg').html(html);
+              }
+          }
+        hide_auction_msg();
+      }
+    });
+  });
+$(document).on('change', '#auction-upload-sheet', function(){
+  console.log("Site url",site_url);
+  var url = site_url + 'auction/ajax/bulkAuctionUpload';
+  var name = document.getElementById("auction-upload-sheet").files[0].name;
+  var form_data = new FormData();
+  var ext = name.split('.').pop().toLowerCase();
+  if(jQuery.inArray(ext, ['xls','xlsx']) == -1) {
+    console.log("hereee");
+    alert("Invalid File");
+  }
+
+  form_data.append("file", document.getElementById('auction-upload-sheet').files[0]);
+    $.ajax({
+       url: url,
+       type: 'POST',
+       data: form_data,
+       contentType: false,
+       cache: false,
+       processData: false,
+       dataType: 'JSON', 
+      success:function(response) {
+          if(response.status == 200){
+              var downloadUrl = site_url + 'uploads/' + response.uploaded_status;
+              var  pathHtml =  '<a href =  "'+ downloadUrl + '" class="btn btn-success"><i class="fa fa-download font-16" data-unicode="f019" ></i>Download Success File</a>';
+                  $('#errorFileMsgAuction').html(pathHtml);
+                  var html = '<p style="color: green; font-size:14px;">'+response.msg+'</p>'
+                  $('#showErrorMsgAuction').css("display", "block");
+                  $('#showErrorMsgAuction').html(html);
+          } else {
+              var errorFile  =  response.uploaded_status;
+              var failureUploadCount = response.rowErrorCount;
+              if(errorFile){
+                  $('#errorFileMsgAuction').css("display", "block");
+                  $('#showErrorMsgAuction').css("display", "block");
+                  $('#showErrorMsgAuction').html('<p style="font-size:14px;">'+failureUploadCount + ' Error found in upload sheet. Please fix errors and re-upload the sheet.</p>');
+                  var downloadUrl = site_url + 'uploads/' + errorFile;
+                  var  pathHtml =  '<a href =  "'+ downloadUrl + '" class="btn btn-danger"><i class="fa fa-download font-16" data-unicode="f019" ></i>Download Error File</a>';
+                  $('#errorFileMsgAuction').html(pathHtml);
+              } else {    
+                  var html = '<p style="color: red; font-size:14px;">'+response.msg+'</p>'
+                  $('#showErrorMsgAuction').css("display", "block");
+                  $('#showErrorMsgAuction').html(html);
+                  $('#errorFileMsgAuction').html('');
+              }
+          }
+        hide_auction_msg();
+        document.getElementById("auction-upload-sheet").value = null;
+      }
+    });
+  });
+        //Edit Vehicle Details
+ $(document).on('click', '#editVehiclesVID', function () {
+     var auction_id = $(this).attr('data-auction_id');
+    $('#uploadVehicle .modal-body').load(site_url + 'auction/ajax/updateVehicleView', function (result) {
+        hide_auction_msg();
+        $("#inventory").fileinput({
+            showPreview: false,
+            showUpload: false,
+            allowedFileExtensions: ['xls', 'xlsx'],
+            'elErrorContainer': '#errorBlock'
+        });        
+        $('#uploadVehicle').modal('show');
+    });
+});
+
+ var closeUploadPopUp = function () {
+        $('#uploadVehicle').modal('hide');
+}
+ var uploadInventoryData = function () {
+    if ($('#inventory').val() == '') {
+        alertify.alert('Please upload file').set('title', 'Error');
+        return false;
+    }else {
+        $("#updateWith").val('vid');
+        var form = $('.form-upload')[0];
+        var url = site_url + 'auction/ajax/editVehicleInventory';
+        show_auction_msg();
+        $.ajax({
+            url: url,
+            type: 'POST',
+            dataType: "JSON",
+            data: new FormData(form),
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                hide_auction_msg();
+                //console.log(response);return false;
+                if (typeof response.logout != 'undefined') {
+                    if (response.logout) {
+                        show_auction_msg('error', 'Your session has been expired.', 'stay', 5000, true, false, true, true, false, 'Ok', null, 'hide_auction_msg()', null, true);
+                        setTimeout(function () {
+                            window.location.reload(true);
+                        }, 5000);
+                        return false;
+                    }
+                }
+//                if (response.status == 200) {
+//                    show_auction_msg('success', 'Vehicles Updated Successfully.', 'stay', 5000, true, false, true, true, false, 'Ok', null, 'hide_auction_msg()', null, true);
+//                } else {
+                    if(response.status == 400){ //for exception in excel file
+                      show_auction_msg('error', response.msg, 'stay', 5000, true, false, true, true, false, 'Ok', null, 'hide_auction_msg()', null, true);
+                    } else {
+                    var succesUploadCount = response.successDataCount;
+                    var failureUploadCount = response.failureDataCount;
+                    var uniqueErrorFound = response.uniqueErrorFound;
+                    var errorFile = response.errorFile;
+                    var errorMsg = response.msg;
+                    hide_auction_msg();
+                    //console.log(succesUploadCount,failureUploadCount,uniqueErrorFound,errorFile,errorMsg);
+                    //$('#successImg').show(); 
+                    $('#responseContainer').show();
+                    $('#successCountMsg').show().html('');
+                    $('.alert-danger-unique').hide();
+                    $('#failuresMsgUnique').hide();
+                     $('.fileinput-remove-button').click();
+                    if (succesUploadCount > 0) {
+                     //alert('dd');
+                        $('#successCountMsg').html('<h4 class="mrg-T0 col-green">' + succesUploadCount + ' Vehicles Updated Successfuly<i class="fa fa-check-circle font-24" data-unicode="f058"></i></h4>');
+                        $('.alert-danger').hide();
+                       
+                    }
+                    if (failureUploadCount > 0) {
+                        $('#failuresMsg').html('<strong >' + failureUploadCount + '</strong></span> Error found in upload sheet. Please fix errors and re-upload the sheet.');
+                        var downloadUrl = site_url + 'uploads/' + errorFile;
+                        var pathHtml = '<a href =  "' + downloadUrl + '" class="btn btn-danger" target="_blank" rel="noopener"><i class="fa fa-download font-16" data-unicode="f019" ></i>Download Error File</a>';
+                        $('#errorFileMsg').html(pathHtml);
+                        $('.alert-danger').show();
+                        $('.fileinput-remove-button').click();
+                    }
+                    if (uniqueErrorFound > 0) {
+                        $('#failuresMsgUnique').html(response.uniqueErrorMsg + '. Please fix errors and re-upload the sheet.');
+                        $('.alert-danger-unique').show();
+                        $('#failuresMsgUnique').show();
+                        $('.fileinput-remove-button').click();
+                    }
+                    $('.form-upload input[type=file]').val('');
+                }
+
+            }
+        });
+    }
+}
+    function getAuctionData() {
+        let auctionArr = $('#auctionID').val() ? $('#auctionID').val().split(',') : [];
+        if(!auctionArr.length) {
+            show_auction_msg('error', 'Please enter auction IDs.', 'vanish', 2000, true, false, false, false, false,null,null,null,null,false);
+            return;
+        }
+        var request = site_url + 'auction/ajax/downloadAuctionData?' + 'data=' + auctionArr.join(',');
+        window.open(request, '_blank');
+    }
+</script>
+<div class="container-fluid c-fluid mrg-T50">
+    <div class="gray-head">
+        <div class="row">
+            <div class="col-md-2">
+               <h1 class="main-heading">Auctions <div class="heading-border"></div></h1>
+                <ol class="breadcrumb mrg-all-0 pad-L0 pad-B0">
+                    <li><a href="https://adminauctionqa.gaadi.com/dashboard">Home</a></li>
+                    <li class="active">Auctions</li>
+                </ol>
+            </div>
+                         <div class="col-md-10 text-right">
+               <!-- <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/uploadSheet">
+                    Convert PDF to JPGE
+                </a> -->
+                <!--   <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" onclick="restartMoveDeamon()">
+                    Restart Move
+                </a> -->
+                                    <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/move-vehicle">
+                        Move Vehicles
+                    </a>
+                                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="javascript:void(0)" id="editVehiclesVID" data-auction_id="0">Edit Vehicle Details</a>
+                <!-- <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" data-toggle="modal" data-target="#ocbUploadSheet">
+                    OCB Upload
+                </a> -->
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" onclick="gotoPPt()">
+                    Download PPT
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/uploadMultipleAuctionImage">
+                    Upload Image
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/uploadGodigitImage">
+                    Upload Go-Digit Images 
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/uploadMultipleImage">
+                    Upload Royal Sundaram Images
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/manageWiningLimit">
+                    Vehicle Winning Limit
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" data-toggle="modal" data-target="#auctionUploadSheet">
+                    Create/Edit Bulk Auction
+                </a>
+                <!--                     <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/editBulkAuction">
+                        Edit Bulk Auction
+                    </a>
+                 -->
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/setup">
+                    Add Auction <i class="fa fa-plus-circle font-18 pad-L5" data-unicode="f055"></i>
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/sellerBasedAuction">
+                    Find/Edit Auction in bulk
+                </a>
+                <a class="btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0" href="https://adminauctionqa.gaadi.com/auction/autoBucketCreate">
+                    Auto Bucket Creation
+                </a>
+            </div>
+                     </div>
+    </div>
+
+    <div class="container-fluid body-container mrg-T20">
+        <div id="maintain_same_tab" class="switch-toggle switch-4 alert alert-info overview-btn">
+            <input id="live" name="view5" type="radio" checked="">
+            <label for="live" onclick="toggleSection('live')">Live ( <small id="liveTotalRecord"></small> ) </label>
+           
+            <input id="upcoming" name="view5" type="radio">
+            <label for="upcoming" onclick="toggleSection('upcoming')">Upcoming ( <small id="upTotalRecord"></small> )</label>
+                        <input id="uploading" name="view5" type="radio">
+            <label for="uploading" onclick="toggleSection('uploading')">Uploading ( <small id="uplTotalRecord"></small> ) </label>
+            <input id="expiring" name="view5" type="radio">
+            <label for="expiring" onclick="toggleSection('expiring')">Expired ( <small id="exTotalRecord"></small> ) </label>
+                        <!-- <label for="expired" onclick="">Expired</label> -->
+            <a class="btn btn-primary report-active"><i class="fa fa-caret-up switch-arrow" data-unicode="f0d8"></i></a>
+        </div> 
+                <form action="#" method="get" id="filteSearchBusiness">
+            <div class="selectfields">
+                <select name="business_id" id="business_id" class="custom-select" title="Bank">
+                    <option value="1">Insurance</option><option value="2" selected="">Bank</option><option value="4">Consumer</option><option value="5">Scrap</option><option value="6">Home</option><option value="7">Yard</option>                </select>
+                <div id="search_by" style="float:right; display: none;"> 
+                    <label>Search By: </label>
+                    <select name="filter_on" id="filter_on" class="custom-select" title="Filter On">
+                        <option value="all">All</option>
+                        <option value="title" selected="">Title</option>
+                        <option value="chassis_no">Chassis No.</option>
+                        <option value="reg_no">Reg No.</option>
+                        <option value="vid">VID</option>
+                        <option value="loan_agreement_no">Loan Agreement No.</option>
+                        <option value="engine_no">Engine No.</option>
+                        <option value="claim_no">Claim No.</option>
+                    </select>   
+                </div>
+            </div>
+        </form> 
+        <div class="auction-tab mrg-B0">
+            <div id="liveTab" class="tabmain">
+                <!-- <div class="tab-title">( 0 ) Results</div> -->
+                <div class="row">
+                    <div class="col-md-12">
+                         <div class="table-responsive cusData-table">
+                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class=""><option value="20">20</option><option value="50">50</option><option value="100">100</option><option value="500">500</option><option value="1000">1000</option></select> Entries</label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_0"></label></div><div id="DataTables_Table_0_processing" class="dataTables_processing" style="display: block;">Processing...</div><table class="table liveAuction table-bordered table-striped table-hover enquiry-table dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                <thead>
+                                    <tr role="row"><th width="3%" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1">Bucket ID</th><th class="alLeft sorting" width="20%" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 210px;">Name</th><th class="alLeft sorting" width="6%" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 52px;">Region</th><th class="alLeft sorting_disabled" width="4%" rowspan="1" colspan="1" style="width: 28px;">Type</th><th width="12%" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 119px;">Client</th><th class="alLeft sorting" width="6%" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 52px;">Format</th><th class="alLeft sorting" width="6%" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 52px;">Vehicle Type</th><th width="10%" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 96px;">End Date &amp; Time</th><th width="4%" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 61px;">Time Remaining</th><th width="6%" class="sorting_disabled" rowspan="1" colspan="1" style="width: 53px;">Vehicles Left</th><th width="23%" class="sorting_disabled" rowspan="1" colspan="1" style="width: 244px;">Action</th></tr>
+                                </thead>
+                            <tbody></tbody></table><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite"></div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="upcomingTab" class="tabmain" style="display:none;">
+                <!-- <div class="tab-title" >( 0 ) Results</div> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table upcomingAuction table-bordered table-striped table-hover enquiry-table">
+                                <thead>
+                                    <tr>
+                                                                                    <th width="3%">Bucket ID</th>
+                                                                                <th class="alLeft nameUpcoming" width="25%">Name</th>
+                                        <th class="alLeft" width="7%">Region</th>
+                                        <th class="alLeft" width="7%">Type</th>
+                                        <th width="10%">Client</th>
+                                        <th class="alLeft" width="7%">Format</th>
+                                        <th class="alLeft" width="7%">Vehicle Type</th>
+                                        <th width="4%">Start Date</th>
+                                        <th width="4%">End Date</th>
+                                        <th width="10%">Vehicles Left</th>
+                                                                                <th width="30%" class="actionUpcoming">Action</th>
+                                                                            </tr>
+                                </thead>
+                                
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="uploadingTab" class="tabmain" style="display:none;">
+                <!-- <div class="tab-title">( 0 ) Results</div> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table uploadingAuction table-bordered table-striped table-hover enquiry-table">
+                                <thead>
+                                    <tr>
+                                                                                    <th width="3%">Bucket ID</th>
+                                                                                <th width="20%" class="nameUpcoming">Name</th>
+                                        <th width="10%">Location</th>
+                                        <th width="10%">Type</th>
+                                        <th width="10%">Client</th>
+                                        <th width="10%">Format</th>
+                                        <th width="10%">Vehicle Type</th>
+                                        <th width="15%">Start Date</th>
+                                        <th width="15%">End Date</th>
+                                        <th width="10%">Vehicles Left</th>
+                                        <th width="10%" class="actionUpcoming">Action</th>
+                                    </tr>
+                                </thead>
+                                
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="expiringTab" class="tabmain" style="display:none;">
+               
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table expiredAuction table-bordered table-striped table-hover enquiry-table">
+                                <thead>
+                                    <tr>
+                                                                                    <th width="2%">Bucket ID</th>
+                                                                                <th width="15%" class="nameUpcoming">Name</th>
+                                        <th width="8%">Location</th>
+                                        <th width="5%">Type</th>
+                                        <th width="5%">Client</th>
+                                        <th width="5%">Format</th>
+                                        <th width="10%">Vehicle Type</th>
+                                        <th width="13%">Start Date</th>
+                                        <th width="12%">End Date</th>
+                                        <th width="10%">Vehicles Left</th>
+                                        <th width="15%" class="">Action</th>
+                                    </tr>
+                                </thead>
+
+                                
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div><!--/Container Fluid -->
+
+<!-- Live/Upcoming modal -->
+<div id="liveUpcomingdetailsModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+   <div class="modal-header pad-T5 pad-B5">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <h4 class="modal-title" id="myModalLabel">Live and Upcoming Auctions</h4>
+   </div>
+   <div class="modal-body">
+
+   </div>
+  </div>        
+ </div>
+</div> 
+
+<div id="liveAuctionModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+   <div class="modal-header pad-T5 pad-B5">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <h4 class="modal-title" id="myModalLabel">Calling Dashboard</h4>
+   </div>
+   <div class="modal-body">
+
+   </div>
+  </div>        
+ </div>
+</div>   
+
+<!-- Expired modal -->
+<div id="expireddetailsModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+   <div class="modal-header pad-T5 pad-B5">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <h4 class="modal-title" id="myModalLabel">Expired Auctions</h4>
+   </div>
+   <div class="modal-body">
+
+   </div>
+  </div>        
+ </div>
+</div>   
+<!-- download reports modal -->
+<div id="downloadReportsModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-dialog_custom2">
+            <form role="form" action="" method="post" id="EditfrmExecutive">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Downloads</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+        </form></div>
+        
+    </div>
+</div>     
+<style type="text/css">
+    table.dataTable thead th, table.dataTable thead td{
+        padding: 10px !important;
+    }
+    .cusData-table .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .cusData-table .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .cusData-table .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active 
+    {
+        border: none;
+        background: none;
+    }
+    .cusData-table .dataTables_wrapper .dataTables_paginate .paginate_button.current, .cusData-table .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+    {
+        background: white;
+        color: #e66437  !important;
+        border: 1px solid #979797;
+    }
+    .countDown{
+        position: static !important;
+        font-size: 12px !important;
+        margin: 0 !important;
+        min-width: auto !important;
+    }
+    .fix-btn-size{
+      width: 225px !important;;
+    }
+</style>
+<div class="modal fade bs-example-modal-lg" id="uploadVehicle" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" oncontextmenu="return false;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header header-modal-new">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Update Vehicle Details</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-example-modal-lg" id="ocbUploadSheet" role="dialog">
+    <div class="modal-dialog modal-lg" role="document" style="width: 60%">
+        <div class="modal-content">
+            <div class="modal-header header-modal-new" style="background-color: #323a45 !important;">
+                <button type="button" class="close changeColor" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title changeColor" id="myModalLabel">OCB Upload</h4>
+            </div>
+             <div class="modal-body">
+                <div class="row">
+                 <div class="col-md-12 form-group">
+                    <label for="exampleInputPassword1" style="margin-left: 27px;" class="form-label font-13">Please Upload File of Given Format <span class="font-12">(Max. Upload Size : 1024 MB and assign 250 vehicle Per Sheet)</span></label>
+                  </div>
+               </div>
+              <div class="row">
+                <div class="col-md-9 form-group">
+                    <form role="form" id="bulkUploadOCB" name="bulkUploadOCB" method="POST" enctype="multipart/form-data">
+                        <div class="col-md-12">
+                            <div class="form-group mrg-B0 pull-left  col-md-12">              
+                                <input type="file" class="filestyle logo-file" name="sheet" data-input="false" id="upload-sheet" tabindex="-1">                    
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+                  <div class="col-md-3 form-group" style="padding-top: 7px;">
+                    <a target="_blank" rel="noopener" style="color: #ef5a28" href="https://auctionscdn.cardekho.com/auctionuploads/ocbUploadSheet.xls">Download File Format</a>
+                </div> 
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="showErrorMsg" style="display: none; text-align: center; color: red;"></div>
+                        <div id="errorFileMsg" style="display: none; text-align: center;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-example-modal-lg" id="auctionUploadSheet" role="dialog">
+    <div class="modal-dialog modal-lg" role="document" style="width: 60%">
+        <div class="modal-content">
+            <div class="modal-header header-modal-new" style="background-color: #323a45 !important;">
+                <button type="button" class="close changeColor" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title changeColor" id="myModalLabel">Create/Edit Bulk Auction</h4>
+            </div>
+             <div class="modal-body">
+                <p class="pull-right"><a rel="noopener" href="https://adminauctionqa.gaadi.com/auction/viewCreateEditBulkAuctionLogs">View Upload Logs</a></p>
+             <div class="row" style="padding-left: 10px;padding-top: 10px;padding-bottom: 10px;font-size: 16px;">
+             <label for="import">
+                <input id="import" type="radio" name="auctionType" value="import" checked=""> 
+                <span style="margin-left:5px"> Import Auctions </span>
+              </label> 
+              </div>
+             <div id="importAuction">
+                <div class="row">
+                 <div class="col-md-12 form-group">
+                    <label for="exampleInputPassword1" style="margin-left: 27px;" class="form-label font-15">Please Upload File of Given Format <span class="font-14">(Max. Upload Size : 1024 MB and assign 250 vehicle Per Sheet)</span></label>
+                  </div>
+               </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                    <form role="form" id="bulkUploadAuction" name="bulkUploadAuction" method="POST" enctype="multipart/form-data">
+                        <div class="col-md-12">
+                            <div class="form-group mrg-B0 pull-left  col-md-12">              
+                                <input type="file" class="filestyle logo-file" name="sheet" data-input="false" id="auction-upload-sheet" tabindex="-1">                    
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+                  <div class="col-md-6 form-group" style="padding-top: 7px;">
+                    <a target="_blank" rel="noopener" style="color: #ef5a28" href="../assets/auctionUploadSheetFinal.xls">1. Download File Format</a>
+                    <br>
+                    <a target="_blank" rel="noopener" style="color: #ef5a28" href="../assets/freeze_endtime.xls">2. Download Freeze End Time File Format</a>
+                </div> 
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="showErrorMsgAuction" style="display: none; text-align: center; color: red;"></div>
+                        <div id="errorFileMsgAuction" style="display: none; text-align: center;"></div>
+                    </div>
+                </div>
+                </div>
+             <div class="row" style="padding-left: 10px;padding-top: 10px;padding-bottom: 10px;font-size: 16px;">
+                <label for="export">
+                <input id="export" type="radio" name="auctionType" value="export"> 
+                <span style="margin-left:5px"> Export Auctions </span>
+              </label> 
+              </div>
+               
+             <div id="exportAuction" style="display:none;">
+             <div class="row">
+             <div class="col-md-12">
+             <div class="row">
+                 <div class="col-md-12 form-group">
+                    <label for="exampleInputPassword1" style="margin-left: 27px;" class="form-label font-15">Please enter Auction IDs comma separated:</label>
+                  </div>
+               </div>
+             <div class="col-md-10">
+             <input type="text" class="form-control input-md font-15 required" placeholder="Auction IDs" id="auctionID" style="height: 35px;margin-bottom: 20px;">
+            </div>
+            <div class="col-md-2">
+             <button type="button" onclick="getAuctionData()" class="btn btn-default btn-sm dropdown-toggle" style="height: 35px;width: 85px;font-size: 14px;">Submit</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div><footer class="footer">
+  <div class="container-fluid mrg-T0 pad-all-10 pad-B5 footer-container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pull-right">
+            <span style="color:#E66437; font-size:18px;">
+              <i class="fa fa-phone font-18" style="margin-right:5px;" data-unicode="f095"></i><strong class="font-16 dark-gray"><span style="color:#E66437;">Call for assistance:</span> +91-8448488200 </strong>
+            </span>
+        </div>
+        <p class="mrg-T0 pad-B0">© 2018 Girnarsoft Automobiles Pvt. Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer></body></html>

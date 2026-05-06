@@ -1,0 +1,3743 @@
+Logged in. Opening dropdown...
+Clicking logout...
+Screenshot saved: screenshots/logout-popup.png
+
+=== VISIBLE BUTTONS ===
+[
+  {
+    "tag": "A",
+    "text": "LMS",
+    "className": "dropdown-toggle",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "ADMINISTRATIONS",
+    "className": "dropdown-toggle",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Rahul Binod",
+    "className": "dropdown-toggle border-none",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Move Vehicles",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Edit Vehicle Details",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": "editVehiclesVID"
+  },
+  {
+    "tag": "A",
+    "text": "Download PPT",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Upload Image",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Upload Go-Digit Images",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Upload Royal Sundaram Images",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Vehicle Winning Limit",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Create/Edit Bulk Auction",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Add Auction",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Find/Edit Auction in bulk",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "Auto Bucket Creation",
+    "className": "btn btn-default btn-lg tab-btn btn-rounded mrg-T15 mrg-R0",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-primary report-active",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default auction_communication",
+    "id": ""
+  },
+  {
+    "tag": "A",
+    "text": "",
+    "className": "btn btn-default live_auction_call",
+    "id": ""
+  }
+]
+
+=== MODALS/POPUPS ===
+[
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-sm",
+    "visible": false,
+    "innerHTML": "\n <div class=\"modal-dialog modal-lg\" role=\"document\">\n  <div class=\"modal-content\">\n   <div class=\"modal-header pad-T5 pad-B5\">\n    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n    <h4 class=\"modal-title\" id=\"myModalLabel\">Live and Upcoming Auctions</h4>\n   </div>\n   <div class=\"modal-body\">\n\n   </div>\n  </div>        \n </div>\n"
+  },
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-sm",
+    "visible": false,
+    "innerHTML": "\n <div class=\"modal-dialog modal-lg\" role=\"document\">\n  <div class=\"modal-content\">\n   <div class=\"modal-header pad-T5 pad-B5\">\n    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n    <h4 class=\"modal-title\" id=\"myModalLabel\">Calling Dashboard</h4>\n   </div>\n   <div class=\"modal-body\">\n\n   </div>\n  </div>        \n </div>\n"
+  },
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-sm",
+    "visible": false,
+    "innerHTML": "\n <div class=\"modal-dialog modal-lg\" role=\"document\">\n  <div class=\"modal-content\">\n   <div class=\"modal-header pad-T5 pad-B5\">\n    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n    <h4 class=\"modal-title\" id=\"myModalLabel\">Expired Auctions</h4>\n   </div>\n   <div class=\"modal-body\">\n\n   </div>\n  </div>        \n </div>\n"
+  },
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-sm",
+    "visible": false,
+    "innerHTML": "\n    <div class=\"modal-dialog\">\n        <div class=\"modal-content modal-dialog_custom2\">\n            <form role=\"form\" action=\"\" method=\"post\" id=\"EditfrmExecutive\">\n                <div class=\"modal-header\">\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\"><span aria-hidden=\"true\">×</span><span class=\"sr-only\">Close</span></button>\n                    <h4 class=\"modal-title\">Downloads</h4>\n                </div>\n                <div class=\"modal-body\">\n\n             "
+  },
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-lg",
+    "visible": false,
+    "innerHTML": "\n    <div class=\"modal-dialog modal-lg\" role=\"document\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header header-modal-new\">\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n                <h4 class=\"modal-title\" id=\"myModalLabel\">Update Vehicle Details</h4>\n            </div>\n            <div class=\"modal-body\">\n            </div>\n        </div>\n    </div>\n"
+  },
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-lg",
+    "visible": false,
+    "innerHTML": "\n    <div class=\"modal-dialog modal-lg\" role=\"document\" style=\"width: 60%\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header header-modal-new\" style=\"background-color: #323a45 !important;\">\n                <button type=\"button\" class=\"close changeColor\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n                <h4 class=\"modal-title changeColor\" id=\"myModalLabel\">OCB Upload</h4>\n            </div>\n             <div class=\"modal-bod"
+  },
+  {
+    "tag": "DIV",
+    "className": "modal fade bs-example-modal-lg",
+    "visible": false,
+    "innerHTML": "\n    <div class=\"modal-dialog modal-lg\" role=\"document\" style=\"width: 60%\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header header-modal-new\" style=\"background-color: #323a45 !important;\">\n                <button type=\"button\" class=\"close changeColor\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n                <h4 class=\"modal-title changeColor\" id=\"myModalLabel\">Create/Edit Bulk Auction</h4>\n            </div>\n             <div cl"
+  }
+]

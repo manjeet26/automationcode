@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel Test Results Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+
+        .summary-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .summary-card.passed {
+            border-left-color: #28a745;
+        }
+
+        .summary-card.failed {
+            border-left-color: #dc3545;
+        }
+
+        .summary-card.errors {
+            border-left-color: #fd7e14;
+        }
+
+        .summary-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #667eea;
+        }
+
+        .summary-card.passed .value {
+            color: #28a745;
+        }
+
+        .summary-card.failed .value {
+            color: #dc3545;
+        }
+
+        .summary-card.errors .value {
+            color: #fd7e14;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .test-results {
+            display: grid;
+            gap: 20px;
+        }
+
+        .test-result {
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            background: #f0f9ff;
+        }
+
+        .test-result.passed {
+            background: #f0fdf4;
+            border-left-color: #28a745;
+        }
+
+        .test-result.failed {
+            background: #fef2f2;
+            border-left-color: #dc3545;
+        }
+
+        .test-result.error {
+            background: #fff7ed;
+            border-left-color: #fd7e14;
+        }
+
+        .test-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .test-name .icon {
+            font-size: 1.5em;
+        }
+
+        .test-details {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .test-details strong {
+            color: #333;
+        }
+
+        .metadata {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .metadata-item {
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #667eea;
+        }
+
+        .metadata-item label {
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .metadata-item value {
+            color: #333;
+        }
+
+        .duration {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .status-passed {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .status-failed {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .log-content {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 400px;
+            overflow-y: auto;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Admin Panel Test Results</h1>
+            <p>Comprehensive Test Report</p>
+        </div>
+
+        <div class="summary">
+            <div class="summary-card passed">
+                <div class="label">Passed</div>
+                <div class="value">4</div>
+            </div>
+            <div class="summary-card failed">
+                <div class="label">Failed</div>
+                <div class="value">0</div>
+            </div>
+            <div class="summary-card errors">
+                <div class="label">Errors</div>
+                <div class="value">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">Success Rate</div>
+                <div class="value" style="color: #28a745;">100.0%</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="metadata">
+                <div class="metadata-item">
+                    <label>Report Generated</label>
+                    <span>2026-05-06 19:38:43</span>
+                </div>
+                <div class="metadata-item">
+                    <label>Total Tests</label>
+                    <span>4</span>
+                </div>
+                <div class="metadata-item">
+                    <label>Total Duration</label>
+                    <span>31.27 seconds</span>
+                </div>
+                <div class="metadata-item">
+                    <label>Environment</label>
+                    <span>Chromium Browser</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Test Results</h2>
+                <div class="test-results">
+
+                    <div class="test-result passed">
+                        <div class="test-name">
+                            <span class="icon">✅</span>
+                            test_smoke_admin_login_page_loads
+                        </div>
+                        <div class="test-details">
+                            <strong>Status:</strong> <span class="status-passed">PASSED</span>
+                            <strong>Duration:</strong> <span class="duration">7.79s</span>
+                            <strong>Description:</strong> <span>Verify admin login page loads with all required elements visible</span>
+                        </div>
+                    </div>
+        
+                    <div class="test-result passed">
+                        <div class="test-name">
+                            <span class="icon">✅</span>
+                            test_smoke_admin_login_with_valid_credentials
+                        </div>
+                        <div class="test-details">
+                            <strong>Status:</strong> <span class="status-passed">PASSED</span>
+                            <strong>Duration:</strong> <span class="duration">5.99s</span>
+                            <strong>Description:</strong> <span>Verify successful login with valid admin credentials and redirect to auction management page</span>
+                        </div>
+                    </div>
+        
+                    <div class="test-result passed">
+                        <div class="test-name">
+                            <span class="icon">✅</span>
+                            test_smoke_admin_login_with_invalid_credentials_is_blocked
+                        </div>
+                        <div class="test-details">
+                            <strong>Status:</strong> <span class="status-passed">PASSED</span>
+                            <strong>Duration:</strong> <span class="duration">6.41s</span>
+                            <strong>Description:</strong> <span>Verify login is blocked when invalid credentials are provided</span>
+                        </div>
+                    </div>
+        
+                    <div class="test-result passed">
+                        <div class="test-name">
+                            <span class="icon">✅</span>
+                            test_smoke_admin_logout
+                        </div>
+                        <div class="test-details">
+                            <strong>Status:</strong> <span class="status-passed">PASSED</span>
+                            <strong>Duration:</strong> <span class="duration">9.68s</span>
+                            <strong>Description:</strong> <span>Verify admin user logout functionality and redirect back to login page</span>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Summary Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Test Name</th>
+                            <th>Status</th>
+                            <th>Duration</th>
+                            <th>Timestamp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>test_smoke_admin_login_page_loads</td>
+                            <td class="status-passed">PASSED</td>
+                            <td>7.79s</td>
+                            <td>19:38:43</td>
+                        </tr>
+        
+                        <tr>
+                            <td>test_smoke_admin_login_with_valid_credentials</td>
+                            <td class="status-passed">PASSED</td>
+                            <td>5.99s</td>
+                            <td>19:38:43</td>
+                        </tr>
+        
+                        <tr>
+                            <td>test_smoke_admin_login_with_invalid_credentials_is_blocked</td>
+                            <td class="status-passed">PASSED</td>
+                            <td>6.41s</td>
+                            <td>19:38:43</td>
+                        </tr>
+        
+                        <tr>
+                            <td>test_smoke_admin_logout</td>
+                            <td class="status-passed">PASSED</td>
+                            <td>9.68s</td>
+                            <td>19:38:43</td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Detailed Logs</h2>
+
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Invalid Login 20260506 193038</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:30:38 - test_invalid_login[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_invalid_login[chromium]
+2026-05-06 19:30:38 - test_invalid_login[chromium] - INFO - [conftest.py:58] - login_page() - Creating LoginPage instance
+2026-05-06 19:30:41 - test_invalid_login[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_invalid_login[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Login Page Loads 20260506 193034</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:30:34 - test_login_page_loads[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_login_page_loads[chromium]
+2026-05-06 19:30:35 - test_login_page_loads[chromium] - INFO - [conftest.py:58] - login_page() - Creating LoginPage instance
+2026-05-06 19:30:38 - test_login_page_loads[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_login_page_loads[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Logout Functionality 20260506 192756</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:27:56 - test_logout_functionality[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_logout_functionality[chromium]
+2026-05-06 19:27:57 - test_logout_functionality[chromium] - INFO - [test_logout.py:24] - test_logout_functionality() - Test: Verify admin logout functionality
+2026-05-06 19:27:57 - test_logout_functionality[chromium] - INFO - [test_logout.py:26] - test_logout_functionality() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:28:02 - test_logout_functionality[chromium] - INFO - [test_logout.py:29] - test_logout_functionality() - Admin login page loaded successfully
+2026-05-06 19:28:02 - test_logout_functionality[chromium] - INFO - [test_logout.py:31] - test_logout_functionality() - Attempting login with username: administrator
+2026-05-06 19:28:02 - test_logout_functionality[chromium] - INFO - [test_logout.py:34] - test_logout_functionality() - Clicking SIGN IN button
+2026-05-06 19:28:02 - test_logout_functionality[chromium] - INFO - [test_logout.py:37] - test_logout_functionality() - Waiting for URL change to manage auction page
+2026-05-06 19:28:04 - test_logout_functionality[chromium] - INFO - [test_logout.py:39] - test_logout_functionality() - Current URL after login: https://adminauctionqa.gaadi.com/auction/manageAuction
+2026-05-06 19:28:04 - test_logout_functionality[chromium] - INFO - [test_logout.py:41] - test_logout_functionality() - User successfully logged in
+2026-05-06 19:28:04 - test_logout_functionality[chromium] - INFO - [test_logout.py:43] - test_logout_functionality() - Setting up dialog handler for logout confirmation
+2026-05-06 19:28:04 - test_logout_functionality[chromium] - INFO - [test_logout.py:46] - test_logout_functionality() - Executing JavaScript to open dropdown menu
+2026-05-06 19:28:04 - test_logout_functionality[chromium] - INFO - [test_logout.py:59] - test_logout_functionality() - Clicking logout button
+2026-05-06 19:28:07 - test_logout_functionality[chromium] - INFO - [test_logout.py:63] - test_logout_functionality() - Current URL after logout: https://adminauctionqa.gaadi.com/
+2026-05-06 19:28:07 - test_logout_functionality[chromium] - INFO - [test_logout.py:65] - test_logout_functionality() - Verifying user is back on login page
+2026-05-06 19:28:07 - test_logout_functionality[chromium] - INFO - [test_logout.py:67] - test_logout_functionality() - Test passed: User successfully logged out
+2026-05-06 19:28:07 - test_logout_functionality[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_logout_functionality[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Logout Functionality 20260506 193041</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:30:41 - test_logout_functionality[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_logout_functionality[chromium]
+2026-05-06 19:30:41 - test_logout_functionality[chromium] - INFO - [test_logout.py:24] - test_logout_functionality() - Test: Verify admin logout functionality
+2026-05-06 19:30:41 - test_logout_functionality[chromium] - INFO - [test_logout.py:26] - test_logout_functionality() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:30:48 - test_logout_functionality[chromium] - INFO - [test_logout.py:29] - test_logout_functionality() - Admin login page loaded successfully
+2026-05-06 19:30:48 - test_logout_functionality[chromium] - INFO - [test_logout.py:31] - test_logout_functionality() - Attempting login with username: administrator
+2026-05-06 19:30:48 - test_logout_functionality[chromium] - INFO - [test_logout.py:34] - test_logout_functionality() - Clicking SIGN IN button
+2026-05-06 19:30:48 - test_logout_functionality[chromium] - INFO - [test_logout.py:37] - test_logout_functionality() - Waiting for URL change to manage auction page
+2026-05-06 19:30:50 - test_logout_functionality[chromium] - INFO - [test_logout.py:39] - test_logout_functionality() - Current URL after login: https://adminauctionqa.gaadi.com/auction/manageAuction
+2026-05-06 19:30:50 - test_logout_functionality[chromium] - INFO - [test_logout.py:41] - test_logout_functionality() - User successfully logged in
+2026-05-06 19:30:50 - test_logout_functionality[chromium] - INFO - [test_logout.py:43] - test_logout_functionality() - Setting up dialog handler for logout confirmation
+2026-05-06 19:30:50 - test_logout_functionality[chromium] - INFO - [test_logout.py:46] - test_logout_functionality() - Executing JavaScript to open dropdown menu
+2026-05-06 19:30:50 - test_logout_functionality[chromium] - INFO - [test_logout.py:59] - test_logout_functionality() - Clicking logout button
+2026-05-06 19:30:53 - test_logout_functionality[chromium] - INFO - [test_logout.py:63] - test_logout_functionality() - Current URL after logout: https://adminauctionqa.gaadi.com/
+2026-05-06 19:30:53 - test_logout_functionality[chromium] - INFO - [test_logout.py:65] - test_logout_functionality() - Verifying user is back on login page
+2026-05-06 19:30:53 - test_logout_functionality[chromium] - INFO - [test_logout.py:67] - test_logout_functionality() - Test passed: User successfully logged out
+2026-05-06 19:30:53 - test_logout_functionality[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_logout_functionality[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Login Page Loads 20260506 193053</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:30:53 - test_smoke_admin_login_page_loads[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_login_page_loads[chromium]
+2026-05-06 19:30:53 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:41] - test_smoke_admin_login_page_loads() - Test: Verify admin login page loads
+2026-05-06 19:30:53 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:44] - test_smoke_admin_login_page_loads() - Verifying username input is visible
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:46] - test_smoke_admin_login_page_loads() - Verifying password input is visible
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:48] - test_smoke_admin_login_page_loads() - Verifying SIGN IN button is visible
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:50] - test_smoke_admin_login_page_loads() - ✅ Test passed: All login elements are visible
+2026-05-06 19:30:58 - test_smoke_admin_login_page_loads[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_login_page_loads[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Login Page Loads 20260506 193804</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:38:04 - test_smoke_admin_login_page_loads[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_login_page_loads[chromium]
+2026-05-06 19:38:05 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:41] - test_smoke_admin_login_page_loads() - Test: Verify admin login page loads
+2026-05-06 19:38:05 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:44] - test_smoke_admin_login_page_loads() - Verifying username input is visible
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:46] - test_smoke_admin_login_page_loads() - Verifying password input is visible
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:48] - test_smoke_admin_login_page_loads() - Verifying SIGN IN button is visible
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [test_smoke.py:50] - test_smoke_admin_login_page_loads() - ✅ Test passed: All login elements are visible
+2026-05-06 19:38:12 - test_smoke_admin_login_page_loads[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_login_page_loads[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Login With Invalid Credentials Is Blocked 20260506 193104</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:31:04 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium]
+2026-05-06 19:31:04 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:68] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Test: Verify login is blocked with invalid credentials
+2026-05-06 19:31:04 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - WARNING - [test_smoke.py:69] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Using invalid password: testing@123
+2026-05-06 19:31:04 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:31:09 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:31:09 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:31:09 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:32] - login_to_admin() - Attempting login with username: administrator
+2026-05-06 19:31:09 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:35] - login_to_admin() - Clicking SIGN IN button
+2026-05-06 19:31:09 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:73] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Waiting for login attempt to complete
+2026-05-06 19:31:11 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:75] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Current URL after invalid login: https://adminauctionqa.gaadi.com/
+2026-05-06 19:31:11 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:77] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - ✅ Test passed: Invalid login was blocked
+2026-05-06 19:31:11 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Login With Invalid Credentials Is Blocked 20260506 193819</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:38:19 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium]
+2026-05-06 19:38:19 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:68] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Test: Verify login is blocked with invalid credentials
+2026-05-06 19:38:19 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - WARNING - [test_smoke.py:69] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Using invalid password: testing@123
+2026-05-06 19:38:19 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:38:23 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:38:23 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:38:23 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:32] - login_to_admin() - Attempting login with username: administrator
+2026-05-06 19:38:23 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:35] - login_to_admin() - Clicking SIGN IN button
+2026-05-06 19:38:23 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:73] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Waiting for login attempt to complete
+2026-05-06 19:38:25 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:75] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - Current URL after invalid login: https://adminauctionqa.gaadi.com/
+2026-05-06 19:38:25 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [test_smoke.py:77] - test_smoke_admin_login_with_invalid_credentials_is_blocked() - ✅ Test passed: Invalid login was blocked
+2026-05-06 19:38:25 - test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_login_with_invalid_credentials_is_blocked[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Login With Valid Credentials 20260506 193058</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:30:58 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_login_with_valid_credentials[chromium]
+2026-05-06 19:30:58 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:55] - test_smoke_admin_login_with_valid_credentials() - Test: Verify admin login with valid credentials
+2026-05-06 19:30:58 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:31:03 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:31:03 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:31:03 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:32] - login_to_admin() - Attempting login with username: administrator
+2026-05-06 19:31:03 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:35] - login_to_admin() - Clicking SIGN IN button
+2026-05-06 19:31:03 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:59] - test_smoke_admin_login_with_valid_credentials() - Waiting for URL change to manage auction page
+2026-05-06 19:31:04 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:61] - test_smoke_admin_login_with_valid_credentials() - Current URL: https://adminauctionqa.gaadi.com/auction/manageAuction
+2026-05-06 19:31:04 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:63] - test_smoke_admin_login_with_valid_credentials() - ✅ Test passed: User successfully logged in
+2026-05-06 19:31:04 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_login_with_valid_credentials[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Login With Valid Credentials 20260506 193813</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:38:13 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_login_with_valid_credentials[chromium]
+2026-05-06 19:38:13 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:55] - test_smoke_admin_login_with_valid_credentials() - Test: Verify admin login with valid credentials
+2026-05-06 19:38:13 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:38:17 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:38:17 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:38:17 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:32] - login_to_admin() - Attempting login with username: administrator
+2026-05-06 19:38:17 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:35] - login_to_admin() - Clicking SIGN IN button
+2026-05-06 19:38:17 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:59] - test_smoke_admin_login_with_valid_credentials() - Waiting for URL change to manage auction page
+2026-05-06 19:38:19 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:61] - test_smoke_admin_login_with_valid_credentials() - Current URL: https://adminauctionqa.gaadi.com/auction/manageAuction
+2026-05-06 19:38:19 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [test_smoke.py:63] - test_smoke_admin_login_with_valid_credentials() - ✅ Test passed: User successfully logged in
+2026-05-06 19:38:19 - test_smoke_admin_login_with_valid_credentials[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_login_with_valid_credentials[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Logout 20260506 193111</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:31:11 - test_smoke_admin_logout[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_logout[chromium]
+2026-05-06 19:31:11 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:82] - test_smoke_admin_logout() - Test: Verify admin logout functionality
+2026-05-06 19:31:11 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:31:16 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:31:16 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:31:16 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:32] - login_to_admin() - Attempting login with username: administrator
+2026-05-06 19:31:16 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:35] - login_to_admin() - Clicking SIGN IN button
+2026-05-06 19:31:16 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:85] - test_smoke_admin_logout() - Waiting for URL change to manage auction page
+2026-05-06 19:31:18 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:88] - test_smoke_admin_logout() - Setting up dialog handler for logout confirmation
+2026-05-06 19:31:18 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:90] - test_smoke_admin_logout() - Executing JavaScript to open dropdown menu
+2026-05-06 19:31:18 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:102] - test_smoke_admin_logout() - Clicking logout button
+2026-05-06 19:31:21 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:106] - test_smoke_admin_logout() - Current URL after logout: https://adminauctionqa.gaadi.com/
+2026-05-06 19:31:21 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:108] - test_smoke_admin_logout() - Verifying user is back on login page
+2026-05-06 19:31:21 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:110] - test_smoke_admin_logout() - ✅ Test passed: User successfully logged out
+2026-05-06 19:31:21 - test_smoke_admin_logout[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_logout[chromium]
+</div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <strong style="color: #667eea; font-size: 1.1em;">Test Smoke Admin Logout 20260506 193825</strong>
+            <div class="log-content" style="margin-top: 8px;">2026-05-06 19:38:25 - test_smoke_admin_logout[chromium] - INFO - [conftest.py:39] - pytest_runtest_setup() - Starting test: test_smoke_admin_logout[chromium]
+2026-05-06 19:38:25 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:82] - test_smoke_admin_logout() - Test: Verify admin logout functionality
+2026-05-06 19:38:25 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:22] - open_admin_login() - Navigating to admin panel: https://adminauctionqa.gaadi.com
+2026-05-06 19:38:30 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:24] - open_admin_login() - Waiting for username input to be visible
+2026-05-06 19:38:30 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:26] - open_admin_login() - Admin login page loaded successfully
+2026-05-06 19:38:30 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:32] - login_to_admin() - Attempting login with username: administrator
+2026-05-06 19:38:30 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:35] - login_to_admin() - Clicking SIGN IN button
+2026-05-06 19:38:30 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:85] - test_smoke_admin_logout() - Waiting for URL change to manage auction page
+2026-05-06 19:38:31 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:88] - test_smoke_admin_logout() - Setting up dialog handler for logout confirmation
+2026-05-06 19:38:31 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:90] - test_smoke_admin_logout() - Executing JavaScript to open dropdown menu
+2026-05-06 19:38:32 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:102] - test_smoke_admin_logout() - Clicking logout button
+2026-05-06 19:38:35 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:106] - test_smoke_admin_logout() - Current URL after logout: https://adminauctionqa.gaadi.com/
+2026-05-06 19:38:35 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:108] - test_smoke_admin_logout() - Verifying user is back on login page
+2026-05-06 19:38:35 - test_smoke_admin_logout[chromium] - INFO - [test_smoke.py:110] - test_smoke_admin_logout() - ✅ Test passed: User successfully logged out
+2026-05-06 19:38:35 - test_smoke_admin_logout[chromium] - INFO - [conftest.py:46] - pytest_runtest_teardown() - Finished test: test_smoke_admin_logout[chromium]
+</div>
+        </div>
+        
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Admin Panel Web Automation Test Suite</p>
+            <p>Generated on 2026-05-06 19:38:43</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <strong>Report Location:</strong> test-results/sample-test-results.html
+            </p>
+        </div>
+    </div>
+</body>
+</html>
