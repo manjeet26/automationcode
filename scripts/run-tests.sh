@@ -31,22 +31,26 @@ echo ""
 
 read -p "Select option (1-5): " option
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_DIR"
+
 case $option in
     1)
         echo "🚀 Running all tests with logging..."
-        python3 -m pytest tests/ -v --log-cli=true
+        python3 -m pytest tests/ -v --log-cli-level=INFO
         ;;
     2)
         echo "🚀 Running smoke tests..."
-        python3 -m pytest -m smoke -v --log-cli=true
+        python3 -m pytest -m smoke -v --log-cli-level=INFO
         ;;
     3)
         echo "🚀 Running tests with full report generation..."
-        python3 run-tests-with-report.py
+        python3 "$SCRIPT_DIR/run-tests-with-report.py"
         ;;
     4)
         echo "📊 Generating report from existing logs..."
-        python3 generate-comprehensive-report.py
+        python3 "$PROJECT_DIR/report-generators/generate-comprehensive-report.py"
         ;;
     5)
         echo "🌐 Opening comprehensive report..."
